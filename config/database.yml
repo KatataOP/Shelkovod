@@ -2,7 +2,7 @@ default: &default
   adapter: postgresql
   encoding: unicode
   pool: 5
-  host: localhost
+  host: <%= ENV['SHELKOVOD_DB_HOST'] %>
   username: <%= ENV['SHELKOVOD_USER'] %>
   password: <%= ENV['SHELKOVOD_PASS'] %>
   
