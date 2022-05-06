@@ -2,23 +2,20 @@ default: &default
   adapter: postgresql
   encoding: unicode
   pool: 5
+  host: localhost
+  username: <%= ENV['SHELKOVOD_USER'] %>
+  password: <%= ENV['SHELKOVOD_PASS'] %>
   
 development:
   <<: *default
   database: <%= ENV['SHELKOVOD_DEV_DB'] %>
-  username: <%= ENV['SHELKOVOD_USER'] %>
-  password: <%= ENV['SHELKOVOD_PASS'] %>
 
 test:
   <<: *default
   database: <%= ENV['SHELKOVOD_TEST_DB'] %>
-  username: <%= ENV['SHELKOVOD_USER'] %>
-  password: <%= ENV['SHELKOVOD_PASS'] %>
 
 production:
   <<: *default
   secret_key_base: <%= ENV["SECRET_KEY_BASE"] %>
   database: <%= ENV['SHELKOVOD_PROD_DB'] %>
-  username: <%= ENV['SHELKOVOD_USER'] %>
-  password: <%= ENV['SHELKOVOD_PASS'] %>
 
