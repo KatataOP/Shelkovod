@@ -11,6 +11,7 @@ gem "importmap-rails"
 gem "turbo-rails"
 gem "stimulus-rails"
 gem "jbuilder"
+gem "pg"
 
 # gem "redis", "~> 4.0"
 # gem "bcrypt", "~> 3.1.7"
