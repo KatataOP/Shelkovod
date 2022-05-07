@@ -1,0 +1,5 @@
+---
+pid: 62137
+control_url: unix:///var/folders/4n/2tf9zzz9317ghgw7fvz5rp580000gn/T/puma-status-1651922149837-62137
+control_auth_token: 0df59e536c79aec5883f89b17a4a4e3c
+running_from: "/Users/kirka/web/Shelkovod"
