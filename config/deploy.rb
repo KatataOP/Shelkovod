@@ -13,7 +13,7 @@ set :pty,             true
 set :use_sudo,        false
 set :stage,           :production
 set :deploy_via,      :remote_cache
-set :deploy_to,       "/home/#{fetch(:user)}/apps/#{fetch(:application)}"
+set :deploy_to,       "/home/#{fetch(:user)}/web/Shelkovod/"
 set :puma_bind,       "unix://#{shared_path}/sockets/#{fetch(:application)}-puma.sock"
 set :puma_state,      "#{shared_path}/pids/puma.state"
 set :puma_pid,        "#{shared_path}/pids/puma.pid"
@@ -27,7 +27,7 @@ set :puma_init_active_record, true  # Change to false when not using ActiveRecor
 
 ## Defaults:
 # set :scm,           :git
-set :branch,        :master
+set :branch,        :main
 # set :format,        :pretty
 # set :log_level,     :debug
 # set :keep_releases, 5
@@ -54,9 +54,9 @@ namespace :deploy do
     on roles(:app) do
 
       # Update this to your branch name: master, main, etc. Here it's main
-      unless `git rev-parse HEAD` == `git rev-parse origin/master`
-        puts "WARNING: HEAD is not the same as origin/master"
-        puts "Run `git pull` to sync changes."
+      unless `git rev-parse HEAD` == `git rev-parse origin/main`
+        puts "WARNING: HEAD is not the same as origin/main"
+        puts "Merge latest master into main before proceeding."
         exit
       end
     end
