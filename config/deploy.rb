@@ -1,7 +1,7 @@
 server 'shelkovod.com', port: 22, roles: [:web, :app, :db], primary: true
 
 set :repo_url,        'git@github.com:KatataOP/Shelkovod.git'
-set :application,     'shelkovod_production'
+set :application,     'shelkovod'
 
 # If using Digital Ocean's Ruby on Rails Marketplace framework, your username is 'rails'
 set :user,            'deploy'
@@ -10,7 +10,7 @@ set :puma_workers,    0
 
 # Don't change these unless you know what you're doing
 set :pty,             true
-set :use_sudo,        false
+set :use_sudo,        true
 set :stage,           :production
 set :deploy_via,      :remote_cache
 set :deploy_to,       "/home/#{fetch(:user)}/deploys"
@@ -20,7 +20,6 @@ set :puma_pid,        "#{shared_path}/pids/puma.pid"
 set :puma_access_log, "#{release_path}/log/puma.access.log"
 set :puma_error_log,  "#{release_path}/log/puma.error.log"
 set :ssh_options,     { forward_agent: true, user: fetch(:user), keys: %w(~/.ssh/id_rsa.pub) }
-# ^ A reader reported receiving the error Net::SSH::AuthenticationFailed, Their solution was to edit the line set :ssh_options above and remove the .pub extension so that it's simply ...%w(~/.ssh/id_rsa) }.
 set :puma_preload_app, true
 set :puma_worker_timeout, nil
 set :puma_init_active_record, true  # Change to false when not using ActiveRecord

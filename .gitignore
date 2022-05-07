@@ -13,6 +13,9 @@
 !/log/.keep
 !/tmp/.keep
 /shared/*
+/shared/log/*
+/shared/pids/*
+/shared/sockets/*
 
 # Ignore pidfiles, but keep the directory.
 /tmp/pids/*
@@ -30,3 +33,5 @@
 
 # Ignore master key for decrypting credentials and more.
 /config/master.key
+
+
