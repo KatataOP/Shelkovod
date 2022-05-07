@@ -17,7 +17,7 @@ set :deploy_to,       "/home/#{fetch(:user)}/deploys"
 set :puma_bind,       "unix://#{shared_path}/sockets/#{fetch(:application)}-puma.sock"
 set :puma_state,      "#{shared_path}/pids/puma.state"
 set :puma_pid,        "#{shared_path}/pids/puma.pid"
-set :puma_access_log, "#{release_path}/log/puma.access.log"
+set :puma_access_log, "#{release_path}/log/puma.access_second.log"
 set :puma_error_log,  "#{release_path}/log/puma.error.log"
 set :ssh_options,     { forward_agent: true, user: fetch(:user), keys: %w(~/.ssh/id_rsa.pub) }
 set :puma_preload_app, true
