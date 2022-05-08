@@ -1,6 +1,6 @@
 class HomeController < ApplicationController
 
 	def index
-		@test = "kirka is here"
+		@test = "#{t('owner')} - #{t('hello')}" 
 	end
 end
