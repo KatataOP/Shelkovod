@@ -1,4 +1,4 @@
-# [Shelkovod](https://www.shelkovod.com)
+# [Shelkovod](https://shelkovod.com)	
 
 Shelkovod is an eco farm and cottage cooperative located in Ukraine, between Kharkiv and Merefa.
 This repo is a web based application designed to help with Shelkovod's activities. It is also a beta testing ground for project codename "Transparent Politics", created by Kirill Afan as a result of the Kharkiv Civilian Relief efforts he had started during the Ukraine - Russia conflict of 2022.
