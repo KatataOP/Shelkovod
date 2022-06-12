@@ -18,6 +18,7 @@ en:
         elections_nominations: "Elections & Nominations"
     register: "Register"
     log_in: "Log In"
+    profile: "Profile"
   main:
     phone_label: Phone
     phone_number: +1-800-222-3333

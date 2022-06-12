@@ -208,10 +208,17 @@
                         </ul>
                     </li> -->
                 </ul>
-                <a class="greennature-donate-button greennature-lb-payment">
-                    <span class="greennature-button-overlay"></span>
-                    <span class="greennature-button-donate-text"><%= I18n.t('menu.register') %></span>
-                </a>
+                <% if current_user %>
+                    <%= link_to edit_user_path(current_user), class: 'greennature-donate-button' do %>
+                        <span class="greennature-button-overlay"></span>
+                        <span class="greennature-button-donate-text"><%= I18n.t('menu.profile') %></span>
+                    <% end %>
+                <% else %>
+                    <%= link_to new_user_registration_path, class: 'greennature-donate-button' do %>
+                        <span class="greennature-button-overlay"></span>
+                        <span class="greennature-button-donate-text"><%= I18n.t('menu.register') %></span>
+                    <% end %>
+                <% end %>
             </nav>
             <div class="greennature-navigation-gimmick" id="greennature-navigation-gimmick"></div>
             <div class="clear"></div>

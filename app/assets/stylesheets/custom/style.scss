@@ -8071,3 +8071,23 @@ only screen and (                min-resolution: 2dppx) {
 .msp-cn-1-9 { font-family:"Lato";font-weight:900;font-size:64px;letter-spacing:3px;line-height:normal;color:#2d2418;text-transform: uppercase; } 
 .msp-cn-1-10 { background-color:#020202;padding-top:10px;padding-right:22px;padding-bottom:10px;padding-left:22px;border-radius:3px;font-family:"Lato";font-weight:300;font-size:47px;line-height:normal;color:#ffffff;background-color:rgba(0, 0, 0, 0.5) } 
 .msp-cn-1-13 { font-family:"Lato";font-weight:900;font-size:64px;letter-spacing:4px;line-height:normal;color:#2d2418;text-transform: uppercase; } 
+
+
+
+.with-top-padding{
+	margin-top: 150px;
+	margin-bottom: 40px;
+}
+
+
+@media only screen and (max-width: 1062px) {
+	.with-top-padding{
+		margin-top: 200px;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.with-top-padding{
+		margin-top: 20px;
+	}
+}

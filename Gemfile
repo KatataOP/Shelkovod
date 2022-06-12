@@ -12,6 +12,7 @@ gem "turbo-rails"
 gem "stimulus-rails"
 gem "jbuilder"
 gem "pg"
+gem "devise"
 
 # gem "redis", "~> 4.0"
 # gem "bcrypt", "~> 3.1.7"
@@ -35,6 +36,7 @@ group :development do
   gem 'capistrano-rails',   require: false
   gem 'capistrano-bundler', require: false
   gem 'capistrano3-puma',   require: false
+  gem "letter_opener"
 end
 
 group :test do

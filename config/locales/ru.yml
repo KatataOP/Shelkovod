@@ -18,6 +18,7 @@ ru:
         elections_nominations: "Выборы & Номинации"
     register: "Регистрацыя"
     log_in: "Войти"
+    profile: "Профиль"
   main:
     phone_label: Телефон
     phone_number_1: +1-800-222-3333

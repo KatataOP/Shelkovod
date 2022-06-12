@@ -28,7 +28,16 @@
 
 		<div class="content-wrapper">
     	<div class="greennature-content">
-    		<%= yield %>
+    		<div class="with-sidebar-wrapper">
+	    		<% if notice %>
+					  <p class="alert alert-success"><%= notice %></p>
+					<% end %>
+					<% if alert %>
+					  <p class="alert alert-danger"><%= alert %></p>
+					<% end %>
+
+	    		<%= yield %>
+	    	</div>
 	    </div>
 	    <!-- greennature-content -->
   	  <div class="clear"></div>
