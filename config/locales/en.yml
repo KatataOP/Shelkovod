@@ -1,8 +1,27 @@
 en:
   menu: 
-    home: "HOME"
+    home: "Home"
+    news: "News"
+    about: "About"
+    community_label: "Community"
+    community: 
+      about: "About"
+      calendar: "Calendar"
+      members: "Members"
+      land: "Land"
+      responsibilities: "Responsibilities"
+      initiatives_label: "Inititatives"
+      initiatives:
+        proposals: "Proposals"
+        poles: "Poles"
+        funding_campaigns: "Funding Campaigns"
+        elections_nominations: "Elections & Nominations"
+    register: "Register"
+    log_in: "Log In"
   main:
     phone_label: Phone
     phone_number: +1-800-222-3333
     email_label: Email
     email: contact@shelkovod.com
+    contact_info_label: "Contact Info"
+    address: "184 Main Collins Street West Victoria 8007"
