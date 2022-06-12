@@ -13,6 +13,7 @@ gem "stimulus-rails"
 gem "jbuilder"
 gem "pg"
 gem "devise"
+gem "rolify"
 
 # gem "redis", "~> 4.0"
 # gem "bcrypt", "~> 3.1.7"
