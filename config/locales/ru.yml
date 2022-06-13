@@ -19,6 +19,17 @@ ru:
     register: "Регистрацыя"
     log_in: "Войти"
     profile: "Профиль"
+  landing:
+    become_a: "Станьте"
+    member_of: "членом"
+    community: "сообщества"
+    apply_button: "Подать заявление"
+    together: "Вместе"
+    we_can: "Мы можем исцелить"
+    the_earth: "Землю"
+    learn_more: "Подробнее"
+    make_this_world: "Сделайте этот мир"
+    better_place: "лучше"
   main:
     phone_label: Телефон
     phone_number_1: +1-800-222-3333
@@ -27,3 +38,13 @@ ru:
     email: contact@shelkovod.com
     contact_info_label: "Контактная информация"
     address: "184 Main Collins Street West Victoria 8007"
+  user_menu:
+    profile: "Профиль"
+    log_out: "Выйти"
+  admin_menu:
+    overview: "Обзор"
+    news: "Новости"
+    members: "Члены"
+    land: "Земельные участки"
+    initiatives: "Инициативы"
+    

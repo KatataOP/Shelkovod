@@ -19,10 +19,32 @@ en:
     register: "Register"
     log_in: "Log In"
     profile: "Profile"
+  landing:
+    become_a: "Become a"
+    member_of: "Member of Our"
+    community: "Community"
+    apply_button: "Apply"
+    together: "Together"
+    we_can: "We can heal"
+    the_earth: "The Earth"
+    learn_more: "Learn More"
+    make_this_world: "Make this world"
+    better_place: "a Better Place"
   main:
     phone_label: Phone
-    phone_number: +1-800-222-3333
+    phone_number_1: +1-800-222-3333
+    phone_number_2: +1-800-333-4444
     email_label: Email
     email: contact@shelkovod.com
     contact_info_label: "Contact Info"
     address: "184 Main Collins Street West Victoria 8007"
+  user_menu:
+    profile: "Profile"
+    log_out: "Log out"
+  admin_menu:
+    overview: "Overview"
+    news: "News"
+    members: "Members"
+    land: "Land"
+    initiatives: "Initiatives"
+
